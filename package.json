@@ -1,0 +1,28 @@
+{
+  "name": "mocked-flowtype",
+  "version": "0.0.1",
+  "description": "A collection of mocked libraries that when mapped to their real counterparts, provide sophisticated flowtype support",
+  "main": "index.js",
+  "scripts": {
+    "test": "flow check"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/l2silver/mocked-flowtype.git"
+  },
+  "keywords": [
+    "flowtype",
+    "mocked"
+  ],
+  "author": "Leigh Silverstein",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/l2silver/mocked-flowtype/issues"
+  },
+  "homepage": "https://github.com/l2silver/mocked-flowtype#readme",
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-cli": "^6.16.0",
+    "flow-bin": "^0.32.0"
+  }
+}
