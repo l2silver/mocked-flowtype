@@ -1,2 +1,6 @@
 node_modules
+test/
+declarations/
+/.flowconfig
 npm-debug.log
+.DS_Store

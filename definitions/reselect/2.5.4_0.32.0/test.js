@@ -1,5 +1,9 @@
 //@flow
-import {defaultMemoize, createSelector, createStructuredSelector} from './index'
+import {
+	defaultMemoize,
+	createSelector,
+	createStructuredSelector
+} from './index'
 
 const defaultMemoizeResult1: number = defaultMemoize(()=>1)();
 // $shouldError
@@ -8,19 +12,19 @@ const defaultMemoizeResult2: string = defaultMemoize(()=>1)();
 
 const defaultSelector = createSelector(
   [
-    (state: {}, props: {}): number =>1
+    (state: {}, props: {}): * => 1
   ],
-  (num): number => num
+  (num): * => num
 )
 
-const num : number = defaultSelector({}, {})
+const num : 1 = defaultSelector({}, {})
 // $shouldError
 const str : string = defaultSelector({}, {})
 
 const defaultStructuredSelector = createStructuredSelector({
-	defaultSelector,
+	defaultSelector
 })
 
-const objectWithNumber : {defaultSelector: number} = defaultStructuredSelector({}, {})
-// $ shouldError
-const objectWithString : {defaultSelector: string} = defaultStructuredSelector({}, {})
+const objectWithNumber : {defaultSelector: 1} = defaultStructuredSelector({}, {})
+// $shouldError
+const objectWithNumber2 : {defaultSelector2: 1} = defaultStructuredSelector({}, {})

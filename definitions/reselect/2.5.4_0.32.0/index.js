@@ -31,12 +31,12 @@ export function createSelector<R, Z: *, S: *, P: *, F: Array<statePropFunction<S
   }
 }
 
-export function createStructuredSelector <S : stateType, P: propsType, Z: *, SO: selectorsObject<S, P, Z, *>>(selectors: SO, selectorCreator : selectorCreatorFunc<*,Z,S,P,*,*> = createSelector) : selectorFunc<S, P, {[key: string]: Z}> {
+export function createStructuredSelector <S : stateType, P: propsType, Z: *, SO: selectorsObject<S, P, Z, *>>(selectors: SO, selectorCreator : selectorCreatorFunc<*,Z,S,P,*,*> = createSelector) : selectorFunc<S, P, {[key: $Keys<SO>]: Z}> {
   const objectKeys = Object.keys(selectors)
   return selectorCreator(
-    objectKeys.map( (key: string ) => selectors[key]),
+    objectKeys.map( (key) => selectors[key]),
     (...values: Array<Z>) => {
-      return values.reduce((composition, value, index) => {
+      return values.reduce((composition, value, index) : {[key: $Keys<SO>]: Z}  => {
         composition[objectKeys[index]] = value
         return composition
       }, {})

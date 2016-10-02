@@ -19,10 +19,5 @@
   "bugs": {
     "url": "https://github.com/l2silver/mocked-flowtype/issues"
   },
-  "homepage": "https://github.com/l2silver/mocked-flowtype#readme",
-  "devDependencies": {
-    "babel": "^6.5.2",
-    "babel-cli": "^6.16.0",
-    "flow-bin": "^0.32.0"
-  }
+  "homepage": "https://github.com/l2silver/mocked-flowtype#readme"
 }
