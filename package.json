@@ -1,6 +1,6 @@
 {
   "name": "mocked-flowtype",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A collection of mocked libraries that when mapped to their real counterparts, provide sophisticated flowtype support",
   "main": "index.js",
   "scripts": {
