@@ -28,3 +28,4 @@ const defaultStructuredSelector = createStructuredSelector({
 const objectWithNumber : {defaultSelector: 1} = defaultStructuredSelector({}, {})
 // $shouldError
 const objectWithNumber2 : {defaultSelector2: 1} = defaultStructuredSelector({}, {})
+const objectWithNumber2 : {defaultSelector: string} = defaultStructuredSelector({}, {})
