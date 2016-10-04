@@ -1,7 +1,7 @@
 Mocked Flowtype
 =========================
 
-For more powerful 3rd party flowtype integration:
+For more powerful 3rd party flowtype integration
 
 ## Additional Resources
 [Introducing Mocked Flowtype](https://medium.com/p/a990cb26ec8e)  
